@@ -1,0 +1,14 @@
+{
+  "name": "marzban-katabump",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Marzban (Gozargah) running on KataBump with two files and no root — node owns the single public port and drives Marzban's Python process",
+  "main": "index.js",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "start": "node --max-old-space-size=48 --expose-gc index.js",
+    "selftest": "SELFTEST=1 node index.js"
+  }
+}
